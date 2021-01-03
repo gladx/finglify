@@ -104,10 +104,10 @@ class Finglify {
 
         foreach ($this->rules as $rule)
         {
-            $string = strtr($string, $rule);
+            $translate= strtr($translate, $rule);
         }
 
-        return $string;
+        return $translate;
     }
 
     public function parseWordsFromFile()
